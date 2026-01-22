@@ -34,15 +34,15 @@ function draw() {
     background(0);
 
     // rect 1
-    fill(255, 0, 0);
+    fill("#DC143C");
     rect(x1, y1, w1, h1);
 
     // rect 2
-    fill(0, 255, 0);
+    fill("#FFC0CB");
     rect(x2, y2, w2, h2);
 
     // rect 3
-    fill(0, 0, 255);
+    fill("#ADD8E6");
     rect(x3, y3, w3, h3);
 
     // update y position 
