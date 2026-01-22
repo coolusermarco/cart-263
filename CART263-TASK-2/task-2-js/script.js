@@ -94,30 +94,57 @@ firstPModify.textContent =
 `Hello, text changed: ${todayDate}`;
 
 console.log(firstPModify.textContent);
+
 /*************************************** */
 /* 2: Select all elements in the HTML that have the class name content-container
  and change the background color ... of first and second ...*/
 /***CODE */
+const contentContainersModify = document.querySelectorAll(".content-container");
+
+contentContainersModify[0].style.backgroundColor = "red";
+contentContainersModify[1].style.backgroundColor = "purple";
+
+console.log(contentContainersModify[0], contentContainersModify[1]);
+
 
 /*************************************** */
 /* 3: Change the src element of the first image element on the page to be ...
 /***CODE */
+const firstImageModify = document.querySelector("img");
+firstImageModify.src = "task-2-images/seven.png";
+
+console.log(firstImageModify);
 
 /*************************************** */
 /* 4: Select the third paragraph element on the page and 
 replace the content (within the paragraph) to be an h2 element which contains the text `TEST 123`
 /***CODE */
+const thirdPModify = document.querySelectorAll("p")[2];
+thirdPModify.innerHTML = "<h2>TEST 123</h2>";
+
+console.log(thirdPModify);
 
 /*************************************** */
 /* 5: Select the fourth paragraph element on the page and 
 add to the existing content an h2 element containing the text `TEST 123`
 /***CODE */
+const fourthPModify = document.querySelectorAll("p")[3];
+fourthPModify.innerHTML += "<h2>TEST 123</h2>";
+
+console.log(fourthPModify);
 
 /*************************************** */
 /* 6: Select the fifth paragraph element on the page and add to the existing content 
 an img element that holds `one.png`, and add the class newStyle to said paragraph element.
 /***CODE */
+const fifthPModify = document.querySelectorAll("p")[4];
+const addedImg = document.createElement("img");
 
+addedImg.src = "task-2-images/one.png";
+fifthPModify.appendChild(addedImg);
+fifthPModify.classList.add("newStyle");
+
+console.log(fifthPModify);
 
 /*************************************** */
 /* 7: Add the following array variable: let colors = ['red','blue','green','orange'];, 
